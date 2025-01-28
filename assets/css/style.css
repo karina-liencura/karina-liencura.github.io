@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#fff;
+    color: #fff;
+    font-family: 'Ubuntu',sans-serif;/*Si no encuentra ubuntu, usara sans-serif*/
+    margin: 5%;
+}
+
+
+
+header{
+    text-align: center;
+    background-color: #191F35
+
+}
+
+header h1,h2{
+    font-weight: normal;
+    line-height: 1;/*interlineado*/
+}
+ header h2{
+    margin-top: 5px;
+    opacity: 0.5;
+ }
+
+  h1{
+    font-size: 4em;
+  }
+
+
+  h2{
+    font-size: 1.5em;
+
+  }
+
+  h3{
+    font-size: 1.5em;
+    margin-bottom: 1%;/* evita que superponga el icono, con la linea*/
+  }
+  h4{
+    margin-top: 5%;/*texto descriptivo*/
+  }
+
+  .habilidades i{
+    font-size: 0.8em;
+    color:#5106e8;
+    background:#fff;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+
+  }
+
+
+  .experiencia i{
+    font-size: 0.8em;
+    color: #fff;
+    background-color: #5106e8;
+    border-radius: 2em;/*enmarca el icono en un circulo*/
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;/*centro el icono*/
+  }
+
+  .formacion i{
+   
+      font-size: 0.8em;
+      color: #fff;
+      background-color: #5106e8;
+      border-radius: 2em;
+      padding: 2px;
+      width: 1.5em;
+      height: 1.5em;
+      text-align: center;
+      vertical-align: center;
+      line-height: 1.5em;
+  }
+
+
+  .container{
+        background-color:#1F253D;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+  }
+
+  .cabecera{
+    position: relative;
+  }
+
+  .cabecera::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/devs.png");
+    background-repeat: no-repeat;
+    opacity: 0.3;/* opacidad del 50% para la imagen de fondo*/
+    z-index: -1;/*Cololca el seudo elemento detras del contenido del contenedor*/
+
+  }
+
+  .foto_perfil{
+    width: 280px;/*ancho inicial del contenedor*/
+    height: 280px;/*altura inicial del contenedor*/
+    border-radius: 50%;/*borde redondo para hacerlo circular*/
+    overflow: hidden;/*oculta cualquier parte de la imagen que salga del contenedor*/
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px solid #5106e8;
+    margin: 5%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);/*sombra que va alrededor del circulo*/
+  }
+
+  .foto_perfil img{
+    width: 100%;/*la imagen ocupa el 100% del contenedor*/
+    height: auto;/*altura automatica para mantener la proporcion*/
+    display: block;/*la imagen se comporta como un bloque para evitar espacio adicional*/
+
+  }
+
+  .nombre_puesto{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .contenido_cv{
+    display: flex;
+    width: 100%;
+
+  }
+
+ .habilidades{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #5106e8;
+    padding: 5%;
+    width: 28%;
+ }  
+
+ .habilidades ul{
+    margin-left: 5%;
+ }
+
+ .carta_presentacion{
+    text-align: justify;
+ }
+
+ .grafico{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1%;
+ }
+
+ .donut_hole{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background-color: #5106e8;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+ }
+
+ .sector{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    transform-origin: left;
+
+ }
+
+ .sector1{
+    transform: rotate(0deg);
+    background-color: #f91c8a;/*color del sector 1*/
+
+ }
+
+ .sector2{
+    transform: rotate(120deg);
+    background-color: #2d0b7c;/*color del sector 2*/  
+ }
+
+ .sector3{
+    transform: rotate(240deg);
+    background-color: #58d1bc;/*color del sector 3*/
+ }
+
+
+.habilidad{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+
+.experiencia{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+
+
+.experiencia h3,h4{
+    text-align: right;
+}
+
+.formacion{
+  .experiencia{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+}
+.formacion h3,h4{
+    text-align: right;
+}
