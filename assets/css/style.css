@@ -12,6 +12,9 @@ body{
     margin: 5%;
 }
 
+.container-fluid {
+  z-index: -1;
+}
 
 
 header{
@@ -165,21 +168,7 @@ header h1,h2{
 
  }
 
- .sector1{
-    transform: rotate(0deg);
-    background-color: #f91c8a;/*color del sector 1*/
 
- }
-
- .sector2{
-    transform: rotate(120deg);
-    background-color: #2d0b7c;/*color del sector 2*/  
- }
-
- .sector3{
-    transform: rotate(240deg);
-    background-color: #58d1bc;/*color del sector 3*/
- }
 
 
 .habilidad{
