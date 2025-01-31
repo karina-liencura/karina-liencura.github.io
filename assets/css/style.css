@@ -12,10 +12,6 @@ body{
     margin: 5%;
 }
 
-.container-fluid {
-  z-index: -1;
-}
-
 
 header{
     text-align: center;
@@ -191,13 +187,17 @@ header h1,h2{
 }
 
 .formacion{
-  .experiencia{
+
     display: inline-block;
     vertical-align: middle;
     padding: 5%;
     width: 50%;
 }
-}
+
 .formacion h3,h4{
     text-align: right;
+}
+
+.btn{
+  vertical-align: center;
 }
