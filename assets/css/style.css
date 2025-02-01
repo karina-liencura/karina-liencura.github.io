@@ -202,4 +202,7 @@ footer{
   text-align: center;
 
 }
+ .container1{
+  display: flex;
 
+ }
